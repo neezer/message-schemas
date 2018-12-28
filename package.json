@@ -7,7 +7,7 @@
   "repository": "https://github.com/neezer/message-schemas",
   "author": "Evan Sherwood <evan@sherwood.io>",
   "license": "MIT",
-  "private": true,
+  "private": false,
   "devDependencies": {
     "@types/tape": "^4.2.33",
     "prettier": "^1.15.3",
