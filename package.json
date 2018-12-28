@@ -1,0 +1,33 @@
+{
+  "name": "@neezer/message-schemas",
+  "version": "0.0.0-semantically-released",
+  "description": "JSON schemas for messages",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": "https://github.com/neezer/message-schemas",
+  "author": "Evan Sherwood <evan@sherwood.io>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@types/tape": "^4.2.33",
+    "prettier": "^1.15.3",
+    "rimraf": "^2.6.2",
+    "semantic-release": "^15.13.2",
+    "tape": "^4.9.1",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.12.0",
+    "tslint-config-prettier": "^1.17.0",
+    "typescript": "^3.2.2"
+  },
+  "dependencies": {
+    "ajv": "^6.6.2"
+  },
+  "files": [
+    "dist",
+    "package.json"
+  ],
+  "scripts": {
+    "build": "rimraf dist && tsc && cp -R src/schemas dist/schemas",
+    "test": "tape -r ts-node/register 'test/**/*.test.ts'"
+  }
+}

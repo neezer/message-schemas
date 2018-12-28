@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "cmd.config.get",
+  "desciption": "[COMMAND] Retrieve app configuration for a tenant, environment, and entity",
+  "type": "object",
+  "properties": {
+    "entity": {
+      "description": "The name of the entity",
+      "type": "string"
+    },
+    "env": {
+      "description": "The name of the environment",
+      "type": "string"
+    },
+    "target": {
+      "description": "The target to format the entity to",
+      "type": "number"
+    },
+    "tenant": {
+      "description": "The tenant code the entity belongs to",
+      "type": "string"
+    }
+  },
+  "required": ["entity", "env", "target", "tenant"]
+}
